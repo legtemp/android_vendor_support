@@ -17,5 +17,5 @@
 
 <resources>
     <color name="text_color">@*android:color/system_accent1_600</color>
-    <color name="cardview_bg">@*android:color/surface_highlight_light</color>
+    <color name="cardview_bg">@*android:color/system_neutral1_0</color>
 </resources>
