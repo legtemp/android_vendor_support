@@ -14,27 +14,26 @@
  * limitations under the License.
  */
 
-package org.aospextended.support.preference;
+package org.legion.support.preference;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 
-public class SecureSettingListPreference extends ListPreference {
+public class SystemSettingListPreference extends ListPreference {
 
-    public SecureSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
+    public SystemSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
     }
 
-    public SecureSettingListPreference(Context context, AttributeSet attrs) {
+    public SystemSettingListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
     }
 
-    public SecureSettingListPreference(Context context) {
+    public SystemSettingListPreference(Context context) {
         super(context);
-        setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
     }
 
     @Override
